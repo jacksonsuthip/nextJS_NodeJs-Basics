@@ -1,0 +1,25 @@
+### list all
+GET http://localhost:7000/temp
+
+### list by id
+GET http://localhost:7000/temp/62e68a150b135e088a969bd7
+
+### delete
+DELETE http://localhost:7000/temp/delete/62e68a150b135e088a969bd7
+
+### update
+PATCH  http://localhost:7000/temp/update/62e68a0d0b135e088a969bd5
+Content-Type: application/json
+
+{
+    "phno":"123456"
+}
+
+### create 
+POST http://localhost:7000/temp/create
+Content-Type: application/json
+
+{
+    "name":"anto suthip",
+    "phno":"7000"
+}
